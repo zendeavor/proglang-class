@@ -336,7 +336,7 @@ class LineSegment < GeometryValue
         if tx1 > tx2 or ty1 > ty2
             NoPoints.new
         else
-            LineSegment.new(tx1, ty1, tx2, ty2).preprocess_prog
+            LineSegment.new(tx1, ty1, tx2, ty2)
         end
     end
 
